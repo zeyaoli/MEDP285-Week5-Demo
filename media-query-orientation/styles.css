@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+.container {
+    border: 1px solid white;
+    margin: 2rem;
+    width: calc(100vw - 4rem);
+    height: 500px;
+    background-color: pink;
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        background-color: blue;
+    }
+}
+
+/* for a range */
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    .container {
+        background-color: deeppink;
+        height: 800px;
+    }
+}

@@ -1,0 +1,83 @@
+/* Don't forget this */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    border: 1px solid white;
+    margin: 2rem;
+    padding: 2rem;
+    width: 100%;
+    min-height: calc(100vh - 4rem);
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border: 1px solid black;
+    background-color: white;
+}
+header {
+    height: 20%;
+}
+.flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    height: 10%;
+}
+main {
+    height: 90%;
+}
+header,
+nav,
+main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: blue;
+    }
+    nav,
+    main {
+        height: 100%;
+    }
+    .flex {
+        flex-direction: row;
+        width: 100%;
+    }
+    nav {
+        width: 20%;
+    }
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        background-color: rgb(136, 223, 35);
+        max-width: 958px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        background-color: rgb(252, 139, 0);
+        max-width: 1390px;
+    }
+}
